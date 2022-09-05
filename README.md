@@ -10,11 +10,20 @@ git clone git@github.com:imaginefish/blog.git
 cd blog
 npm install
 ```
-3. 使用 hexo_cli 进行写作
+3. 使用 hexo_cli 进行写作和发布
 ```shell
+# 新建文章
 hexo new <title>
-```
-4. 使用 hexo_cli 本地启动服务
-```shell
+# 启动本地服务
 hexo server
+# 生成静态文件
+hexo generate
+# Hexo 部署到 GitHub Pages
+hexo clean && hexo deploy
+```
+4. Git 推送到本远程 GitHub 仓库 `main` 分支，更新仓库
+```shell
+git add .
+git commit -m 'some messages'
+git push origin main
 ```
