@@ -35,5 +35,5 @@ git commit -m 'some messages'
 ```
 7. 推送到 GitHub 的 `main` 分支
 ```shell
-git push -u origin main
+git push -f origin main
 ```
