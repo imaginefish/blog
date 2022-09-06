@@ -1,5 +1,5 @@
-# blog
-个人博客，利用 [`Hexo`](https://hexo.io) 构建，使用 [Icarus](https://ppoffice.github.io/hexo-theme-icarus/) 主题。
+# Blog
+个人博客，利用 [`Hexo`](https://hexo.io) 构建，使用 [`Icarus`](https://ppoffice.github.io/hexo-theme-icarus/) 主题。
 ## 如何使用
 1. Git 克隆到本地
 ```shell

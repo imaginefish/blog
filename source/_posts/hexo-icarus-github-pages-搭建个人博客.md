@@ -292,5 +292,46 @@ providers:
     iconcdn: fontawesome
 ```
 ## 其他问题
-- 文章图片插入问题
+- 文章图片的引用路径
 若要插入本地图片，在博客根目录下找到 `source` 文件夹，在其下创建 `img` 子目录，将图片放置于此，通过 `/img/xxx.jpg` 路径引入。
+- 文章图片如何居中显示
+该解决方案来源于 [GitHub Issues](https://github.com/ppoffice/hexo-theme-icarus/issues/386)。
+找到主题的安装路径，找到 `article.styl` 文件，我的路径为 `node_modules\hexo-theme-icarus\include\style\article.styl`，找到如下位置：
+```css
+ &.article
+        .article-meta, .article-tags
+            color: $text-light
+
+        .article-meta
+            overflow-x: auto
+            margin-bottom: .5rem
+
+        .article-more
+            @extend .button.is-light
+
+        .content
+            word-wrap: break-word
+            font-size: $article-font-size
+```
+将 `article` 部分样式添加如下四行代码：
+```css
+ &.article
+        .article-meta, .article-tags
+            color: $text-light
+
+        .article-meta
+            overflow-x: auto
+            margin-bottom: .5rem
+
+        .article-more
+            @extend .button.is-light
+
+        .content
+            word-wrap: break-word
+            font-size: $article-font-size
+        
+            a
+                img
+                    margin: auto
+                    display: block
+```

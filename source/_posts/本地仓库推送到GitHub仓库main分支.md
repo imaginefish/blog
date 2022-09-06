@@ -7,7 +7,7 @@ tags:
 - GitHub
 toc: true
 ---
->GitHub 目前已经将用户创建的版本库的默认分支从 `master` 更改为了 `main`，详情参考[https://github.com/github/renaming](https://github.com/github/renaming)。而 Git 默认创建的还是 `master` 分支，所以在本地仓库同步到 GitHub 时，会出现 `error: failed to push some refs to 'github.com:imaginefish/blog.git'` 报错，需要切换分区后再进行操作。
+>GitHub 目前已经将用户创建的版本库的默认分支从 `master` 更改为了 `main`，详情见[GitHub Change Blog](https://github.blog/changelog/2020-08-26-set-the-default-branch-for-newly-created-repositories)。而 Git 默认创建的还是 `master` 分支，所以在本地仓库同步到 GitHub 时，会出现 `error: failed to push some refs to 'github.com:imaginefish/blog.git'` 报错，需要切换至 `main` 分区后再进行操作。
 <!--more-->
 1. 初始化版本库
 ```shell

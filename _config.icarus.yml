@@ -84,11 +84,11 @@ widgets:
         avatar: /img/avatar.jpg
         avatar_rounded: true
         gravatar:
-        follow_link: https://github.com/imaginefishes
+        follow_link: https://github.com/imaginefish
         social_links:
             Github:
                 icon: fab fa-github
-                url: https://github.com/imaginefishes
+                url: https://github.com/imaginefish
             Email:
                 icon: fas fa-envelope
                 url: mailto:imaginefishes@outlook.com
