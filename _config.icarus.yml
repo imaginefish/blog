@@ -120,7 +120,7 @@ widgets:
         position: right
         type: tags
         order_by: name
-        amount: 
+        amount: 15
         show_count: true
 
 plugins:
@@ -134,8 +134,8 @@ plugins:
         position: bottom-left
         policyLink: https://www.cookiesandyou.com/
     gallery: true
-    katex: true
-    mathjax: true
+    katex: false
+    mathjax: false
     outdated_browser: false
     progressbar: true
 providers:

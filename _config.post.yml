@@ -15,5 +15,5 @@ widgets:
         type: tags
         position: left
         order_by: name
-        amount: 
+        amount: 15
         show_count: true
