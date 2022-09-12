@@ -6,6 +6,7 @@
 git clone git@github.com:imaginefish/blog.git
 ```
 2. 安装相关 node modules
+
 使用 npm 全局安装 Hexo
 ```bash
 npm install -g hexo-cli

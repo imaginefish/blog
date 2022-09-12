@@ -161,7 +161,7 @@ git branch -d main
 - 自己拥有 Fork 后的仓库的读写权限
 - 可以推送 pull request 给官方仓库来贡献代码
 
-将本机生成的公钥内容添加至个人的 GitHub 账户 `SSH Keys` 中，便能实现本地访问 GitHub 仓库，并使用以下命令测试连接是否成功：
+将本机生成的公钥内容添加至个人的 GitHub 账户 `SSH Keys` 中，便能实现本地访问个人的 GitHub 仓库，并使用以下命令测试连接是否成功：
 ```bash
 ssh -T git@github.com
 ```
