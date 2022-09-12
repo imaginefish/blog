@@ -11,7 +11,7 @@ git clone git@github.com:imaginefish/blog.git
 ```bash
 npm install -g hexo-cli
 ```
-进入仓库目录下，使用 npm 安装 node modules
+进入仓库目录下，使用 npm 安装依赖的 node modules
 ```bash
 cd blog
 npm install
