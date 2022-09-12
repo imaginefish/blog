@@ -160,6 +160,11 @@ git branch -d main
 - 可以任意 Fork 开源仓库
 - 自己拥有 Fork 后的仓库的读写权限
 - 可以推送 pull request 给官方仓库来贡献代码
+
+将本机生成的公钥内容添加至个人的 GitHub 账户 `SSH Keys` 中，便能实现本地访问 GitHub 仓库，并使用以下命令测试连接是否成功：
+```bash
+ssh -T git@github.com
+```
 ## 搭建 Git 服务器
 一般在公司内部，还会搭建 Git 服务器，托管公司自己的代码，提升访问速度和安全性，防止代码泄露。
 1. 安装 `git`
@@ -175,7 +180,7 @@ sudo adduser git
 ```bash
 ssh-keygen -t rsa -C "youremail@example.com"
 ```
-之后可以在用户主目录里找到 `.ssh` 目录，里面有 `id_rsa` 和 `id_rsa.pub` 两个文件，这两个就是 `SSH Key` 的秘钥对，`id_rsa` 是私钥，不能泄露出去，`id_rsa.pub` 是公钥，可以放心地告诉任何人，可以其添加至个人的 GitHub 账户 `SSH Keys` 中，便能实现本地访问 GitHub 仓库。
+之后可以在用户主目录里找到 `.ssh` 目录，里面有 `id_rsa` 和 `id_rsa.pub` 两个文件，这两个就是 `SSH Key` 的秘钥对，`id_rsa` 是私钥，不能泄露出去，`id_rsa.pub` 是公钥，可以放心地告诉任何人。
 收集所有需要登录的用户的公钥，把所有公钥导入到 `/home/git/.ssh/authorized_keys` 文件里，一行一个。
 4. 初始化 Git 仓库
 ```bash

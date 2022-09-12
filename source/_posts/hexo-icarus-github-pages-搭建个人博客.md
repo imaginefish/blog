@@ -27,32 +27,32 @@ toc: true
 |0.0.1 - 2.8|0.10|
 ## 安装 Hexo
 使用 npm 全局安装 Hexo。
-```shell
+```bash
 npm install -g hexo-cli
 ```
 ## 安装 icarus
 1. 指定路径初始化博客目录，并切换至该路径下，以blog路径为例
-```shell
+```bash
 hexo init blog
 cd blog
 ```
-2. 使用 npm 安装 Hexo。
-```shell
+2. 使用 npm 安装 Hexo
+```bash
 npm install hexo-theme-icarus
 ```
 3. 配置 Hexo 主题
-```shell
+```bash
 hexo config theme icarus
 ```
 ## 创建 GitHub 仓库
 1. 创建 GitHub 仓库，并开启 ` Environments`，配置 url
 2. 配置 ssh，确保可以 ssh 远程访问 GitHub，可以使用以下命令测试连接是否成功：
-```shell
+```bash
 ssh -T git@github.com
 ```
 如果出行以下信息，则说明连接成功：
 ```
-Hi imaginefish! You've successfully authenticated, but GitHub does not provide shell access.
+Hi imaginefish! You've successfully authenticated, but GitHub does not provide bash access.
 ```
 ## 修改配置
 ### Hexo 配置
