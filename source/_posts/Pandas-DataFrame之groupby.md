@@ -2,7 +2,7 @@
 title: Pandas DataFrame 之 groupby()
 date: 2022-09-13 19:57:49
 categories:
-- 数据处理
+- Python 数据处理
 tags: 
 - Python
 - Pandas
