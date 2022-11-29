@@ -29,13 +29,17 @@ hexo clean && hexo deploy
 ```
 4. Git 推送到本远程 GitHub 仓库 `main` 分支，更新仓库
 
-若后续 GitHub 上又进行了 merge 操作，更新了仓库，导致本地与远程仓库不一致，需要先拉取 GitHub 仓库到本地进行同步：
-```bash
-git pull --rebase origin main
-```
-然后再推送到 GitHub 的 main 分支：
+添加本地仓库更新并提交：
 ```bash
 git add .
 git commit -m 'some messages'
+```
+若后续 GitHub 上又进行了 merge 操作，更新了仓库，导致本地与远程仓库不一致，需要先拉取 GitHub 仓库到本地进行同步：
+```bash
+git pull origin main
+```
+然后再推送到 GitHub 的 main 分支：
+```bash
+
 git push origin main
 ```
